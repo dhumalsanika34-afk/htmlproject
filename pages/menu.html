@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu | Pizza Palace</title>
+</head>
+<body>
+
+    <header>
+        <h1>Our Full Menu</h1>
+        <p><i>Freshly baked in our stone oven.</i></p>
+    </header>
+
+    <nav>
+        <p>
+            <a href="../index.html">Home</a> | 
+            <a href="menu.html"><b>Menu</b></a> |
+            <a href="location.html">Location</a> | 
+            <a href="contact.html">Contact</a>| 
+        </p>
+    </nav>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>Signature Pizzas</h2>
+            <table border="1" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th>Pizza Name</th>
+                        <th>Ingredients</th>
+                        <th>Small</th>
+                        <th>Large</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>The Godfather</b></td>
+                        <td>Pepperoni, Italian sausage, meatballs, ham, bacon.</td>
+                        <td>140.00 Rs</td>
+                        <td>190.00 Rs</td>
+                        <td><img src="../images/tomato-mozzarella-pizza.jpg" width="150px"/></td>
+                    </tr>
+                    <tr>
+                        <td><b>White Garlic</b></td>
+                        <td>Ricotta, mozzarella, roasted garlic, olive oil.</td>
+                        <td>120.00 Rs</td>
+                        <td>170.00 Rs</td>
+                        <td><img src="../images/pizza2.jpeg" width="130px"/></td>
+                    </tr>
+                    <tr>
+                        <td><b>Hawaiian</b></td>
+                        <td>Pineapple, ham, and extra cheese.</td>
+                        <td>130.00 Rs</td>
+                        <td>180.00 Rs</td>
+                        <td><img src="../images/classic-cheese-pizza.avif" width="150px"/></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <br>
+
+        <section>
+            <h2>Sides & Drinks</h2>
+            <ul>
+                <li>Garlic Knots (6pc) - 50.00 Rs</li>
+                <li>Caesar Salad - 70.00 Rs</li>
+                <li>Coke / Sprite / Water - 20.00 Rs</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="order">
+            <h2>Place Your Order</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="piz">Select Pizza:</label><br>
+                    <select id="piz" name="pizza_type">
+                        <option value="godfather">The Godfather</option>
+                        <option value="white">White Garlic</option>
+                        <option value="hawaiian">Hawaiian</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label>Size:</label><br>
+                    <input type="radio" name="size" value="small"> Small
+                    <input type="radio" name="size" value="large"> Large
+                </p>
+
+                <p>
+                    <label for="notes">Special Instructions:</label><br>
+                    <textarea id="notes" name="notes" rows="4" cols="30" placeholder="Extra crispy? No onions?"></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Send Order</button>
+                    <button type="reset">Clear Form</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><i>Note: Prices are subject to tax. Delivery fee applies based on location.</i></p>
+        <p>&copy; 2026 Pizza Palace</p>
+    </footer>
+
+</body>
+</html>
